@@ -85,7 +85,7 @@ Fraction calculateBoardArea(Point _corner, Point _oppositeCorner) {
     Fraction
         boardLength((_oppositeCorner.getXCord() - _corner.getXCord())),
         boardHeight((_oppositeCorner.getYCord() - _corner.getYCord())),
-        boardArea = boardHeight * boardHeight;
+        boardArea = boardHeight * boardLength;
 
         return boardArea;
 }
@@ -97,7 +97,7 @@ int main() {
         numDarts;                          // m
     
     bool
-        polygonHit[numPolygons];
+        polygonHit[100];
 
     Point
         corner,
